@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "b489e49e-5a2b-4310-bd71-08011de55b94",
+		"name": "taskship",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18403080",
+		"_collection_link": "https://red-capsule-251695.postman.co/workspace/taskship~1c6511ec-2479-4583-a116-97521ed9c805/collection/18403080-b489e49e-5a2b-4310-bd71-08011de55b94?action=share&source=collection_link&creator=18403080"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test2\",\r\n    \"password\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test2\",\r\n    \"password\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1Mzk1OSwianRpIjoiZGM0MmE0ZmMtZjZjMC00YTQyLThjYTQtOTI1MjBhYmRmYWY5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QyIiwibmJmIjoxNzE5MTUzOTU5LCJjc3JmIjoiMmRkNjQwY2MtMzk4NS00YjIyLTg2NzYtYmEyZDdmYmYxZTIwIiwiZXhwIjoxNzE5MTU0ODU5fQ.0iLaTlL95EcoCiFVjTrcqesPbGj6PO-frFXi6LnUiPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ice cream\",\r\n    \"description\": \"good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get items",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1Mzk1OSwianRpIjoiZGM0MmE0ZmMtZjZjMC00YTQyLThjYTQtOTI1MjBhYmRmYWY5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QyIiwibmJmIjoxNzE5MTUzOTU5LCJjc3JmIjoiMmRkNjQwY2MtMzk4NS00YjIyLTg2NzYtYmEyZDdmYmYxZTIwIiwiZXhwIjoxNzE5MTU0ODU5fQ.0iLaTlL95EcoCiFVjTrcqesPbGj6PO-frFXi6LnUiPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get item by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1Mzk1OSwianRpIjoiZGM0MmE0ZmMtZjZjMC00YTQyLThjYTQtOTI1MjBhYmRmYWY5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QyIiwibmJmIjoxNzE5MTUzOTU5LCJjc3JmIjoiMmRkNjQwY2MtMzk4NS00YjIyLTg2NzYtYmEyZDdmYmYxZTIwIiwiZXhwIjoxNzE5MTU0ODU5fQ.0iLaTlL95EcoCiFVjTrcqesPbGj6PO-frFXi6LnUiPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/items/5bfa792f-4249-4fbb-ab0f-d7713773275c",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items",
+						"5bfa792f-4249-4fbb-ab0f-d7713773275c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1NDA4NywianRpIjoiZWE4NTZiMmMtYjI3MC00YWE3LTg5ZWItYTU2ZjhiYTk4ZmU4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QyIiwibmJmIjoxNzE5MTU0MDg3LCJjc3JmIjoiMDlkYzc3NzgtZmQ5Yi00OGNhLTgwMTgtZjUxM2MxMzJmY2Y2IiwiZXhwIjoxNzE5MTU0OTg3fQ.DDJaJhXPGsx5KKOM-KQ_QfxiOoiUBsp-CzjdywfrprM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ice cream\",\r\n    \"description\": \"not good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/items/5bfa792f-4249-4fbb-ab0f-d7713773275c",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items",
+						"5bfa792f-4249-4fbb-ab0f-d7713773275c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1NDA4NywianRpIjoiZWE4NTZiMmMtYjI3MC00YWE3LTg5ZWItYTU2ZjhiYTk4ZmU4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QyIiwibmJmIjoxNzE5MTU0MDg3LCJjc3JmIjoiMDlkYzc3NzgtZmQ5Yi00OGNhLTgwMTgtZjUxM2MxMzJmY2Y2IiwiZXhwIjoxNzE5MTU0OTg3fQ.DDJaJhXPGsx5KKOM-KQ_QfxiOoiUBsp-CzjdywfrprM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/items/5bfa792f-4249-4fbb-ab0f-d7713773275c",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"items",
+						"5bfa792f-4249-4fbb-ab0f-d7713773275c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1MzczNSwianRpIjoiNjg2ZjlkNjItYzgyMC00ODA2LTg3YmMtMDljNmY0MGNjZjEzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QiLCJuYmYiOjE3MTkxNTM3MzUsImNzcmYiOiIwZDVmY2FmNi02ZTA1LTQ3YWUtYWZkOC01OWJjYzA4ZWJhOWYiLCJleHAiOjE3MTkxNTQ2MzV9.U-4-6NfCEVVnJ3uA-EgU95WQl9Q4bXDTyr52wukGdjM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change user rule",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxOTE1MzczNSwianRpIjoiNjg2ZjlkNjItYzgyMC00ODA2LTg3YmMtMDljNmY0MGNjZjEzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3QiLCJuYmYiOjE3MTkxNTM3MzUsImNzcmYiOiIwZDVmY2FmNi02ZTA1LTQ3YWUtYWZkOC01OWJjYzA4ZWJhOWYiLCJleHAiOjE3MTkxNTQ2MzV9.U-4-6NfCEVVnJ3uA-EgU95WQl9Q4bXDTyr52wukGdjM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"verified\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/userRole/8c64c43a-8f8d-48d7-b39f-957fdf7d4195",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"userRole",
+						"8c64c43a-8f8d-48d7-b39f-957fdf7d4195"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
