@@ -12,4 +12,5 @@ Run the app
 ```
 flask --app taskship run
 ```
+Use the postman collection to hit the APIs
 
